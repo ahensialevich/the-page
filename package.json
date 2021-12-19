@@ -6,13 +6,15 @@
   "scripts": {
     "build": "gulp && eleventy",
     "gulp": "gulp",
-    "start": "eleventy --serve"
+    "dev": "gulp && concurrently \"gulp watch\" \"eleventy --serve\""
   },
   "dependencies": {
     "reseter.css": "2.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.12.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "github:11ty/eleventy-plugin-syntaxhighlight",
+    "concurrently": "6.5.1",
     "cssnano": "5.0.13",
     "cssnano-preset-advanced": "5.1.9",
     "gulp": "4.0.2",
