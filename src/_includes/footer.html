@@ -1,10 +1,13 @@
 <footer class="footer">
-  <span class="footer-text">
-    Made with <span class="heart">♥</span> in the city of Wrocław
-  </span>
+  <span class="copyright"> © 2021 Andrei Hensialevich </span>
   <div>
     {% for contact in contact.media %}
-    <a href="{{ contact.url }}" target="_blank" rel="noreferrer noopener">
+    <a
+      href="{{ contact.url }}"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="link"
+    >
       <img
         src="{{ contact.icon_src}}"
         alt="{{ contact.name }}"

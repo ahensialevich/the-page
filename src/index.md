@@ -3,19 +3,21 @@ title: "Andrei Hensialevich"
 layout: "base.html"
 ---
 
-## Hi there 👌🏻
+## <span class="caret">›</span> Hi there 👌🏻
 
 My name is Andrei and I'm a frontend engineer from Wrocław, Poland 🇵🇱
 
 ### About:
 
-I'm a Web Developer specializing in building Complex Web Applications with modern front-end technologies and architectures. I'm particularly experienced with JavaScript/TypeScript and using React as a main technology stack. I care about good practices, teamwork and ethics in my professional work. Constantly I am expanding my knowledge in online courses (Udemy), reading IT-articles (Habr, Medium) and community meetups.
+Web developer with more than 4 years of commercial experience. Specializing in building complex web applications with modern frontend technologies and architectures. Particularly experienced with Javascript/Typescript and using React as a main technology stack. In my free time I like to reading good books, traveling and boxing. Also I'm a big fan of coffee ☕
 
 ### Tools:
 
-- React
-- Typescript
-- CSS (css-in-js, post-css)
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- CSS ([css-in-js](https://emotion.sh/), [post-css](https://postcss.org/))
+- [Next.js](https://nextjs.org/)
+- [GraphQL](https://graphql.org/)
 
 ### Contact:
 

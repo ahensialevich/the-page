@@ -8,6 +8,7 @@ const css = () => {
     plugins: [
       require("postcss-import")({ root: "./src *" }),
       require("postcss-custom-media")(),
+      require("postcss-nested")(),
       require("cssnano")({
         preset: [
           "advanced",
