@@ -1,2 +1,5 @@
 node_modules
 dist
+/src/css/*
+.DS_STORE
+src/css/*

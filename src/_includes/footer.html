@@ -1,5 +1,17 @@
-<footer>
-  <a href="https://instagram.com">
-    <img src="/img/instagram.svg" width="32" height="32" />
-  </a>
+<footer class="footer">
+  <span class="footer-text">
+    Made with <span class="heart">♥</span> in the city of Wrocław
+  </span>
+  <div>
+    {% for contact in contact.media %}
+    <a href="{{ contact.url }}" target="_blank" rel="noreferrer noopener">
+      <img
+        src="{{ contact.icon_src}}"
+        alt="{{ contact.name }}"
+        width="24"
+        height="24"
+      />
+    </a>
+    {% endfor %}
+  </div>
 </footer>

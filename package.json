@@ -5,21 +5,27 @@
   "author": "Andrei Hensialevich",
   "scripts": {
     "build": "gulp && eleventy",
-    "gulp": "gulp",
-    "dev": "gulp && concurrently \"gulp watch\" \"eleventy --serve\""
+    "dev": "gulp && concurrently \"gulp watch\" \"eleventy --serve\"",
+    "gulp": "gulp"
   },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
   "dependencies": {
     "reseter.css": "2.0.0"
   },
   "devDependencies": {
     "@11ty/eleventy": "0.12.1",
-    "@11ty/eleventy-plugin-syntaxhighlight": "github:11ty/eleventy-plugin-syntaxhighlight",
     "concurrently": "6.5.1",
     "cssnano": "5.0.13",
     "cssnano-preset-advanced": "5.1.9",
     "gulp": "4.0.2",
     "gulp-postcss": "9.0.1",
+    "html-minifier": "4.0.0",
     "postcss": "8.4.5",
+    "postcss-custom-media": "8.0.0",
     "postcss-import": "14.0.2",
     "prettier": "2.5.1"
   }

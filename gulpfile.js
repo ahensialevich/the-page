@@ -1,13 +1,33 @@
 const postcss = require("gulp-postcss");
-const { src, dest } = require("gulp");
+const { src, dest, parallel, watch } = require("gulp");
 
-exports.default = function () {
+const path = "./src/index.css";
+
+const css = () => {
   const config = () => ({
     plugins: [
       require("postcss-import")({ root: "./src *" }),
-      require("cssnano")({ preset: "advanced" }),
+      require("postcss-custom-media")(),
+      require("cssnano")({
+        preset: [
+          "advanced",
+          {
+            autoprefixer: {
+              add: true,
+            },
+          },
+        ],
+      }),
     ],
   });
 
-  return src("./src/index.css").pipe(postcss(config)).pipe(dest("./src/css"));
+  return src(path).pipe(postcss(config)).pipe(dest("./src/css"));
 };
+
+const watcher = () => {
+  watch(path, { ignoreInitial: true }, css);
+};
+
+exports.default = parallel(css);
+
+exports.watch = watcher;

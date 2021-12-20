@@ -1,7 +1,20 @@
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const htmlmin = require("html-minifier");
 
 module.exports = (eleventyConfig) => {
-  eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.setUseGitIgnore(false);
+
+  eleventyConfig.addTransform("htmlmin", (content, outputPath) => {
+    if (outputPath && outputPath.endsWith(".html")) {
+      const minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      });
+      return minified;
+    }
+
+    return content;
+  });
 
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css");
