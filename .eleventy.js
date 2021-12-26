@@ -1,4 +1,5 @@
 const htmlmin = require("html-minifier");
+const format = require("date-fns/format");
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.setUseGitIgnore(false);
@@ -18,6 +19,8 @@ module.exports = (eleventyConfig) => {
 
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css");
+
+  eleventyConfig.addFilter("formatDate", (date) => format(date, "yyyy-MM-dd"));
 
   return {
     markdownTemplateEngine: "njk",

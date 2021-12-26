@@ -20,8 +20,9 @@
   "devDependencies": {
     "@11ty/eleventy": "0.12.1",
     "concurrently": "6.5.1",
-    "cssnano": "5.0.13",
+    "cssnano": "5.0.14",
     "cssnano-preset-advanced": "5.1.9",
+    "date-fns": "2.28.0",
     "gulp": "4.0.2",
     "gulp-postcss": "9.0.1",
     "html-minifier": "4.0.0",
@@ -30,7 +31,7 @@
     "postcss-import": "14.0.2",
     "postcss-nested": "5.0.6",
     "prettier": "2.5.1",
-    "stylelint": "14.1.0",
+    "stylelint": "14.2.0",
     "stylelint-config-standard": "24.0.0"
   }
 }
