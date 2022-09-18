@@ -15,7 +15,7 @@ Web developer with more than 5 years of commercial experience. Specializing in b
 
 - [React](https://reactjs.org/)
 - [Typescript](https://www.typescriptlang.org/)
-- CSS ([css-in-js](https://vanilla-extract.style/), [post-css](https://postcss.org/))
+- CSS ([css-in-js](https://vanilla-extract.style/), [post-css](https://postcss.org/), [tailwind](https://tailwindcss.com/))
 - [Next.js](https://nextjs.org/)
 - [GraphQL](https://graphql.org/)
 
