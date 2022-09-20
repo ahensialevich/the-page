@@ -3,7 +3,7 @@ title: "Andrei Hensialevich - frontend developer"
 layout: "base.html"
 ---
 
-## <span class="caret">›</span> Hi there 🤝
+## <span class="caret">›</span> Hi there 👋
 
 My name is Andrei and I'm a frontend engineer from Wrocław, Poland 🇵🇱
 
