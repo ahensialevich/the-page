@@ -1,13 +1,15 @@
 {
   "name": "the-page",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "license": "MIT",
   "author": "Andrei Hensialevich",
   "scripts": {
-    "build": "gulp && eleventy",
-    "dev": "gulp && concurrently \"gulp watch\" \"eleventy --serve\"",
-    "gulp": "gulp",
-    "stylelint": "stylelint src/*.css"
+    "astro": "astro",
+    "build": "astro build",
+    "dev": "astro dev",
+    "prepare": "husky install",
+    "preview": "astro preview",
+    "start": "astro dev"
   },
   "browserslist": [
     ">0.2%",
@@ -15,23 +17,26 @@
     "not op_mini all"
   ],
   "dependencies": {
-    "reseter.css": "2.0.0"
+    "@astrojs/tailwind": "3.1.1",
+    "astro": "2.1.5",
+    "tailwindcss": "3.2.7"
   },
   "devDependencies": {
-    "@11ty/eleventy": "1.0.2",
-    "concurrently": "7.4.0",
-    "cssnano": "5.1.13",
-    "cssnano-preset-advanced": "5.3.8",
-    "date-fns": "2.29.3",
-    "gulp": "4.0.2",
-    "gulp-postcss": "9.0.1",
-    "html-minifier": "4.0.0",
-    "postcss": "8.4.16",
-    "postcss-custom-media": "8.0.2",
-    "postcss-import": "15.0.0",
-    "postcss-nested": "5.0.6",
-    "prettier": "2.7.1",
-    "stylelint": "14.12.0",
-    "stylelint-config-standard": "28.0.0"
+    "@commitlint/cli": "17.5.0",
+    "@commitlint/config-conventional": "17.4.4",
+    "@tailwindcss/typography": "0.5.9",
+    "@typescript-eslint/parser": "5.56.0",
+    "eslint": "8.36.0",
+    "eslint-config-prettier": "8.8.0",
+    "eslint-plugin-astro": "0.26.1",
+    "eslint-plugin-jsx-a11y": "6.7.1",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-tailwindcss": "3.10.1",
+    "husky": "8.0.3",
+    "prettier": "2.8.6",
+    "prettier-plugin-astro": "0.8.0"
+  },
+  "volta": {
+    "node": "18.15.0"
   }
 }
